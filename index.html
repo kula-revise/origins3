@@ -158,21 +158,21 @@
      - mono appears nowhere */
 
 :root {
-  --sand:  #EFEEEA;   /* page: cold paper */
-  --paper: #FBFAF7;   /* cards */
-  --cut:   #E4E3DD;   /* insets, sources, carousels */
-  --ink:   #1B1D1F;
-  --clay:  #5A5F63;   /* stage tags, quiet labels */
+  --sand:  #EAEEF4;   /* page: cold screen white, no cream */
+  --paper: #FFFFFF;   /* cards: flat, not ivory */
+  --cut:   #DFE5EE;   /* insets, sources, carousels */
+  --ink:   #0E1219;
+  --clay:  #4B5563;   /* stage tags, quiet labels */
   /* Muted text: captions, attributions, counters. The previous value measured 3.07
      against the card ground and was the lightest of the four source skins. */
-  --fade:  #5E6367;
+  --fade:  #586372;
   /* border red for structure, steel blue for reward */
-  --a1: #A32B23;  --a1-rgb: 163,43,35;
-  --a2: #2E5F8A;  --a2-rgb: 46,95,138;
+  --a1: #5A12E0;  --a1-rgb: 90,18,224;
+  --a2: #0057D9;  --a2-rgb: 0,87,217;
   /* The two hover steps are derived, not identity. Left in the engine block
      they kept the engine's bottle green against this skin's steel blue. */
-  --ink-deep: #131516;
-  --a2-deep:  #214463;
+  --ink-deep: #0A0D12;
+  --a2-deep:  #0043A8;
   --sans:  'Archivo Narrow', 'Archivo', 'Inter', system-ui, -apple-system, Arial, sans-serif;
   --serif: 'Source Serif 4', 'Charter', Georgia, serif;
   --mono:  var(--sans);
@@ -183,7 +183,7 @@ body {
   font-family: var(--serif) !important;
   background-image:
     repeating-linear-gradient(45deg,
-      transparent 0 9px, rgba(27,29,31,0.034) 9px 10px) !important;
+      transparent 0 9px, rgba(14,18,25,0.034) 9px 10px) !important;
 }
 h1, h2, h3 {
   font-family: var(--sans) !important;
@@ -208,7 +208,7 @@ h1, h2, h3 {
   letter-spacing: 0.01em !important;
   text-transform: none !important;
   background: var(--a1) !important;
-  color: #F6F1F0 !important;
+  color: #FFFFFF !important;
   border-radius: 0 !important;
   padding: 0.24rem 0.62rem !important;
   display: inline-block;
@@ -225,7 +225,7 @@ h1, h2, h3 {
   background: var(--cut) !important;
   background-image:
     repeating-linear-gradient(45deg,
-      transparent 0 7px, rgba(163,43,35,0.055) 7px 8px) !important;
+      transparent 0 7px, rgba(90,18,224,0.055) 7px 8px) !important;
   border: 2px solid var(--a1) !important;
   border-radius: 0 !important;
   padding: 1.15rem 1.2rem !important;
@@ -237,7 +237,7 @@ h1, h2, h3 {
   font-weight: 700 !important;
   letter-spacing: 0.01em !important;
   text-transform: none !important;
-  color: #F6F1F0 !important;
+  color: #FFFFFF !important;
   background: var(--a1);
   border-radius: 0;
   padding: 0.5rem 0.62rem;
@@ -285,12 +285,12 @@ h1, h2, h3 {
 
 .btn-begin {
   background: var(--a1) !important;
-  color: #F6F1F0 !important;
+  color: #FFFFFF !important;
   border: 2px solid var(--a1) !important;
   border-radius: 0 !important;
   font-family: var(--sans) !important;
 }
-.btn-begin:hover { background: #862017 !important; border-color: #862017 !important; }
+.btn-begin:hover { background: #3A0B96 !important; border-color: #3A0B96 !important; }
 
 .stat-num { color: var(--a1) !important; font-family: var(--sans) !important; font-weight: 700 !important; }
 .stat-label { color: var(--clay) !important; font-family: var(--sans) !important; }
@@ -299,44 +299,44 @@ h1, h2, h3 {
 /* ---- DARK MODE ------------------------------------------------------------
    The hatch inverts to a blueprint negative rather than simply darkening. */
 body.dark {
-  --sand:  #14181C;
-  --paper: #1C2228;
-  --cut:   #232B32;
-  --ink:   #E7EBEE;
-  --clay:  #9EA9B2;
-  --fade:  #8B959D;
-  /* Lifted from #D4736A: it cleared 4.5 on the card ground but measured 4.42 on the
+  --sand:  #090B11;
+  --paper: #141822;
+  --cut:   #1D2330;
+  --ink:   #EDF1F8;
+  --clay:  #9AA6B8;
+  --fade:  #8E9BAE;
+  /* Lifted from #B79BFF: it cleared 4.5 on the card ground but measured 4.42 on the
      darker --cut inset, where the option letters and the rank numbers sit. */
-  --a1: #DA7E75;  --a1-rgb: 218,126,117;
-  --a2: #6BA3D6;  --a2-rgb: 107,163,214;
+  --a1: #B79BFF;  --a1-rgb: 183,155,255;
+  --a2: #4CC9F0;  --a2-rgb: 76,201,240;
   /* On a dark ground a hover step goes lighter, not deeper. */
   --ink-deep: #FFFFFF;
-  --a2-deep:  #96C0E6;
+  --a2-deep:  #7FDCF7;
 }
 body.dark { background-image:
   repeating-linear-gradient(45deg,
-    transparent 0 9px, rgba(231,235,238,0.042) 9px 10px) !important; }
+    transparent 0 9px, rgba(237,241,248,0.042) 9px 10px) !important; }
 body.dark .card, body.dark .stat-wrap, body.dark .carousel, body.dark .kt {
   border-top-color: var(--a1) !important; border-left-color: var(--a1) !important; }
 body.dark .source {
   border-color: var(--a1) !important;
   background-image: repeating-linear-gradient(45deg,
-    transparent 0 7px, rgba(212,115,106,0.09) 7px 8px) !important; }
+    transparent 0 7px, rgba(183,155,255,0.09) 7px 8px) !important; }
 body.dark .stage-tag, body.dark .kt-label,
-body.dark .expl-label, body.dark .pop-label { background: rgba(212,115,106,0.22) !important; color: #F2C9C4 !important; }
-body.dark .source-attr { background: rgba(212,115,106,0.22) !important; color: #F2C9C4 !important; }
-body.dark .btn-begin { background: var(--a1) !important; border-color: var(--a1) !important; color: #14181C !important; }
-body.dark .btn-begin:hover { background: #E08A82 !important; border-color: #E08A82 !important; }
-body.dark .mode-toggle { background: var(--paper); border-color: rgba(231,235,238,0.24); }
+body.dark .expl-label, body.dark .pop-label { background: rgba(183,155,255,0.22) !important; color: #EFE7FF !important; }
+body.dark .source-attr { background: rgba(183,155,255,0.22) !important; color: #EFE7FF !important; }
+body.dark .btn-begin { background: var(--a1) !important; border-color: var(--a1) !important; color: #090B11 !important; }
+body.dark .btn-begin:hover { background: #CDB6FF !important; border-color: #CDB6FF !important; }
+body.dark .mode-toggle { background: var(--paper); border-color: rgba(237,241,248,0.24); }
 body.dark .rule, body.dark .cover-rule, body.dark .flourish, body.dark .story-rule {
   background-image:
     linear-gradient(90deg, var(--a1) 0 84px, transparent 84px 100%),
     repeating-linear-gradient(90deg, var(--a1) 84px 96px, transparent 96px 106px) !important; }
 
-body.dark .chip { background: rgba(212,115,106,0.16) !important; color: #F2C9C4 !important; }
-body.dark .chip-recall,     body.dark .chip-extract   { background: rgba(212,115,106,0.20) !important; color: #F5D2CD !important; }
-body.dark .chip-understand, body.dark .chip-interpret { background: rgba(107,163,214,0.20) !important; color: #C3DCF1 !important; }
-body.dark .chip-apply,      body.dark .chip-evaluate  { background: rgba(231,235,238,0.16) !important; color: #E7EBEE !important; }
+body.dark .chip { background: rgba(183,155,255,0.16) !important; color: #EFE7FF !important; }
+body.dark .chip-recall,     body.dark .chip-extract   { background: rgba(183,155,255,0.20) !important; color: #EFE7FF !important; }
+body.dark .chip-understand, body.dark .chip-interpret { background: rgba(76,201,240,0.20) !important; color: #CFF0FC !important; }
+body.dark .chip-apply,      body.dark .chip-evaluate  { background: rgba(237,241,248,0.16) !important; color: #EDF1F8 !important; }
 
 
 /* ---- DARK MODE STATE COLOURS ----------------------------------------------
@@ -346,42 +346,42 @@ body.dark .chip-apply,      body.dark .chip-evaluate  { background: rgba(231,235
 
 body.dark .option, body.dark .option-btn {
   background: var(--cut) !important;
-  border-color: rgba(231,235,238,0.20) !important;
+  border-color: rgba(237,241,248,0.20) !important;
   color: var(--ink) !important;
 }
 body.dark .option.selected, body.dark .option-btn.selected {
-  background: rgba(107,163,214,0.16) !important; border-color: #6BA3D6 !important; }
+  background: rgba(76,201,240,0.16) !important; border-color: #4CC9F0 !important; }
 body.dark .option.correct, body.dark .option-btn.correct {
-  background: rgba(107,163,214,0.20) !important;
-  border-color: #6BA3D6 !important;
+  background: rgba(76,201,240,0.20) !important;
+  border-color: #4CC9F0 !important;
   color: var(--ink) !important;
 }
 body.dark .option.wrong, body.dark .option-btn.wrong {
-  background: rgba(212,115,106,0.18) !important;
-  border-color: #D4736A !important;
+  background: rgba(183,155,255,0.18) !important;
+  border-color: #B79BFF !important;
   color: var(--ink) !important;
 }
 body.dark .option.correct .opt-text, body.dark .option-btn.correct .opt-text,
 body.dark .option.wrong   .opt-text, body.dark .option-btn.wrong   .opt-text { color: var(--ink) !important; }
-body.dark .option.correct .opt-letter, body.dark .option-btn.correct .opt-letter { color: #8FBEE4 !important; }
-body.dark .option.wrong   .opt-letter, body.dark .option-btn.wrong   .opt-letter { color: #E39A93 !important; }
+body.dark .option.correct .opt-letter, body.dark .option-btn.correct .opt-letter { color: #7FDCF7 !important; }
+body.dark .option.wrong   .opt-letter, body.dark .option-btn.wrong   .opt-letter { color: #CDB6FF !important; }
 body.dark .opt-mark { color: var(--ink) !important; }
 
 body.dark .primary-btn {
   background: var(--cut) !important;
-  border: 1px solid rgba(212,115,106,0.40) !important;
+  border: 1px solid rgba(183,155,255,0.40) !important;
   color: var(--ink) !important;
 }
-body.dark .primary-btn:hover { background: #2C353D !important; }
+body.dark .primary-btn:hover { background: #252C3B !important; }
 body.dark .primary-btn .btn-title { color: var(--ink) !important; }
 body.dark .primary-btn .btn-sub, body.dark .primary-btn .btn-arrow { color: var(--clay) !important; }
-body.dark .section-btn { border-color: rgba(231,235,238,0.18) !important; color: var(--ink) !important; }
+body.dark .section-btn { border-color: rgba(237,241,248,0.18) !important; color: var(--ink) !important; }
 body.dark .section-btn:hover { background: var(--cut) !important; border-color: var(--a1) !important; }
-body.dark .primary-btn-small { background: var(--a1) !important; color: #14181C !important; }
-body.dark .primary-btn-small:hover:not(:disabled) { background: #E08A82 !important; }
-body.dark .secondary-btn { border-color: rgba(231,235,238,0.30) !important; color: var(--ink) !important; }
+body.dark .primary-btn-small { background: var(--a1) !important; color: #090B11 !important; }
+body.dark .primary-btn-small:hover:not(:disabled) { background: #CDB6FF !important; }
+body.dark .secondary-btn { border-color: rgba(237,241,248,0.30) !important; color: var(--ink) !important; }
 body.dark .secondary-btn:hover:not(:disabled) { background: var(--cut) !important; }
-body.dark .explanation { background: var(--cut) !important; border-color: rgba(212,115,106,0.28) !important; }
+body.dark .explanation { background: var(--cut) !important; border-color: rgba(183,155,255,0.28) !important; }
 body.dark .expl-text { color: var(--ink) !important; }
 body.dark .quiz-foot, body.dark .quiz-foot a { color: var(--clay) !important; }
 
@@ -405,8 +405,8 @@ body { padding-bottom: 4.5rem !important; }
   border-top: 2px solid var(--a1);
   padding-top: 0.6rem;
 }
-.figure img { border: 1px solid rgba(163,43,35,0.35) !important; border-radius: 0 !important; }
-body.dark .figure img { border-color: rgba(212,115,106,0.38) !important; filter: brightness(0.9) contrast(1.02); }
+.figure img { border: 1px solid rgba(90,18,224,0.35) !important; border-radius: 0 !important; }
+body.dark .figure img { border-color: rgba(183,155,255,0.38) !important; filter: brightness(0.9) contrast(1.02); }
 body.dark .figure figcaption { border-top-color: var(--a1); }
 
 
@@ -681,8 +681,8 @@ body.dark .figure figcaption { border-top-color: var(--a1); }
    against wrong red is the hard pair for the commonest form
    of colour blindness.
    ============================================================ */
-:root { --ok: #215239; --ok-rgb: 33,82,57; --on-ok: #FBFAF7; }
-body.dark { --ok: #8BD1A4; --ok-rgb: 139,209,164; --on-ok: #14181C; }
+:root { --ok: #215239; --ok-rgb: 33,82,57; --on-ok: #FFFFFF; }
+body.dark { --ok: #8BD1A4; --ok-rgb: 139,209,164; --on-ok: #090B11; }
 
 .option.correct, .option-btn.correct,
 body.dark .option.correct, body.dark .option-btn.correct {
@@ -741,8 +741,8 @@ body.dark .inter-item.ok span, body.dark .inter-item.ok .rank { color: var(--on-
 .tl-text { display: block; }
 .story-b .tl-mark { color: var(--a2); border-left-color: var(--a2); }
 .story-b .story-num { color: var(--a2) !important; }
-body.dark .story-b .tl-mark { color: #96C0E6; border-left-color: #96C0E6; }
-body.dark .story-b .story-num { color: #96C0E6 !important; }
+body.dark .story-b .tl-mark { color: #7FDCF7; border-left-color: #7FDCF7; }
+body.dark .story-b .story-num { color: #7FDCF7 !important; }
 .story-line.marked + .story-line:not(.marked) { margin-top: 1.8rem; }
 /* The engine draws a short rule before the closing line with a
    ::before. Inside a grid that pseudo element claims a cell and
@@ -908,6 +908,19 @@ body.dark .story-b .story-num { color: #96C0E6 !important; }
   .top-meta { padding-right: 9.5rem; }
 }
 
+
+/* ---- The wrong-answer glyph clears 4.5 on the dark ground -----
+   --a1 measured 3.76 against the wrong-option tint once the rgba
+   is composited. The tick and the cross are what carry the state
+   for a learner who cannot separate the two hues, so the glyph
+   has to be legible on its own. 5.57 after this.
+   -------------------------------------------------------------- */
+body.dark .option.wrong .opt-letter, body.dark .option.wrong .opt-mark,
+body.dark .option-btn.wrong .opt-letter, body.dark .option-btn.wrong .opt-mark,
+body.dark .inter-item.no .inter-mark, body.dark .inter-item.no .rank {
+  color: #EFA79E !important;
+}
+
 </style>
 </head>
 <body class="dark">
@@ -976,57 +989,44 @@ const RESULTS = {
 const FLOW = [
   {
     "type": "story",
-    "marker": "The group project",
-    "markerLabel": "Somewhere you know &middot; the fortnight before it is due",
+    "marker": "The third move",
+    "markerLabel": "The Security Council &middot; January 1946",
     "lines": [
       {
-        "mark": "14 days",
-        "text": "One person in your group redoes your section without asking you first."
+        "text": "Soviet troops entered northern Iran during the war. The war ends and the agreed date for leaving passes."
       },
       {
-        "mark": "10 days",
-        "text": "She redoes somebody else's. Nobody says anything to her about it."
+        "text": "One option is to send an army and force them out, which risks a war nobody has recovered enough to fight."
       },
       {
-        "mark": "6 days",
-        "text": "Two people in the group have stopped opening the file at all."
+        "text": "The other is to accept it, which tells every government that an agreed date means nothing."
       },
       {
-        "mark": "3 days",
-        "text": "It is her project now, with four other names on the front of it."
+        "text": "**Iran does neither.**"
       },
       {
-        "text": "Fight her with three days left and the whole thing collapses."
-      },
-      {
-        "text": "Say nothing and you have already lost it."
-      },
-      {
-        "text": "**Both of those lose.**"
-      },
-      {
-        "text": "Doing nothing is a choice too, and you knew that. Now make the group a continent."
+        "text": "It takes the case to the new Security Council, and the troops leave that year. A year later the same problem arrives in Europe, much larger."
       }
     ]
   },
   {
     "type": "question",
     "kind": "instinct",
-    "q": "So what do you actually do?",
+    "q": "Why would a government take a case like this to the Security Council?",
     "options": [
-      "Confront her about it in front of the whole group",
-      "Say nothing and accept that the mark will still count",
-      "Split the work so that each part is finished separately",
-      "Ask the teacher to step in and sort the group out"
+      "Because the Council could send an army of its own to remove them",
+      "Because it puts the argument somewhere public without starting a war",
+      "Because the Council had the legal power to cancel the agreement",
+      "Because no country has ever ignored a decision of the Council"
     ],
-    "correct": 2,
-    "explanation": "There is no score on this one. The third move does not attack her and it does not surrender either. It changes the situation so that taking over stops being possible. Hold on to that shape, because you are about to watch a government spend 1947 looking for it.",
+    "correct": 1,
+    "explanation": "There is no score on this one. The Council had no army and could cancel nothing. What it had was a room with the world watching, which is a cost without being a war. That is the shape of the move you are about to study, scaled up to a continent. Write that a government either fought or gave in and you have missed the option most governments took, and the marks sit on that option.",
     "noSource": true
   },
   {
     "type": "content",
     "tag": "The turn",
-    "html": "<h2>The word for what you just did</h2><p>You looked for a move that was neither a fight nor a retreat, because both of those handed her the project.</p><p>The exam word for that is <strong>containment</strong>: not attacking communism where it already existed, and not accepting its spread either. Holding the line where it stood.</p><p>Containment is the single most important term in this unit. Everything in this lesson is an attempt to do it, and every one of those attempts is a source you could be asked about.</p>",
+    "html": "<h2>The word for what you just did</h2><p>You looked for a move that was neither a fight nor a retreat, because both of those settled the argument in the other side's favour.</p><p>The exam word for that is <strong>containment</strong>: not attacking communism where it already existed, and not accepting its spread either. Holding the line where it stood.</p><p>Containment is the single most important term in this unit. Everything in this lesson is an attempt to do it, and every one of those attempts is a source you could be asked about.</p>",
     "remember": "Containment is not rolling communism back. It is stopping it going further, which is a much cheaper aim.",
     "terms": [
       {
@@ -1358,7 +1358,7 @@ const FLOW = [
       4,
       5
     ],
-    "explanation": "February, March, June and September 1947, then 1949 and 1955. The gap most people compress is at the end. NATO and the Warsaw Pact are six years apart, not two sides of one moment. Treat them as simultaneous and you lose the point that the Pact answered West German rearmament. That is the point the question turns on.",
+    "explanation": "February, March, June and September 1947, then 1949 and 1955. The gap most people compress is at the end. NATO and the Warsaw Pact are six years apart, not two sides of one moment. Treat them as simultaneous and you lose the point that the Pact answered West German rearmament. That is the point the question depends on.",
     "noSource": true
   },
   {
@@ -1952,7 +1952,7 @@ function showResults(){
   });
   /* The button at the end of the lesson is the thing that continues. It does
      not point at a control somewhere else on the page. */
-  document.getElementById("finish-btn").addEventListener("click",()=>{ KulaLMS.advance(); });
+  document.getElementById("finish-btn").onclick = ()=>{ KulaLMS.advance(); };
   KulaLMS.completed();
 }
 
