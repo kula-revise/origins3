@@ -533,6 +533,8 @@ body.dark .figure figcaption { border-top-color: var(--a1); }
   .toggle-btn { font-family: var(--sans); background: transparent; border: none; color: var(--a1); cursor: pointer; font-size: 0.88rem; font-weight: 600; text-decoration: underline; padding: 0.7rem 0 0; }
   .toggle-body { display: none; margin-top: 0.7rem; padding-top: 0.7rem; border-top: 1px dashed var(--hair-strong); font-size: 0.94rem; color: var(--muted); line-height: 1.66; }
   .toggle-body.open { display: block; }
+  .toggle-body p { font-size: inherit; line-height: inherit; color: inherit; margin: 0 0 0.75rem; }
+  .toggle-body p:last-child { margin-bottom: 0; }
 
   /* Questions */
   .q-text { font-size: 1.16rem; line-height: 1.5; font-weight: 600; margin-bottom: 1.2rem; }
@@ -1020,7 +1022,7 @@ const FLOW = [
       "Because no country has ever ignored a decision of the Council"
     ],
     "correct": 1,
-    "explanation": "There is no score on this one. The Council had no army and could cancel nothing. What it had was a room with the world watching, which is a cost without being a war. That is the shape of the move you are about to study, scaled up to a continent. Write that a government either fought or gave in and you have missed the option most governments took, and the marks sit on that option.",
+    "explanation": "The Council had no army, and it could cancel nothing. What it had was a room with every other government watching. That cost Moscow something without anyone firing a shot. Governments reach for that third option far more often than they fight or give in. Write that a country either fought or surrendered and you miss the option most of them took. That is where the marks are.",
     "noSource": true
   },
   {
@@ -1061,7 +1063,7 @@ const FLOW = [
     "source": {
       "attr": "Source A: from President Harry S Truman's address to a joint session of Congress, 12 March 1947. Public Papers of the Presidents of the United States: Harry S Truman, 1947. A United States government work.",
       "body": "<p>At the present moment in world history nearly every nation must choose between alternative ways of life. The choice is too often not a free one.</p><p>One way of life is based upon the will of the majority, and is distinguished by free institutions, representative government, free elections, guarantees of individual liberty, freedom of speech and religion, and freedom from political oppression.</p><p>The second way of life is based upon the will of a minority forcibly imposed upon the majority. It relies upon terror and oppression, a controlled press and radio, fixed elections, and the suppression of personal freedoms.</p><p>I believe that it must be the policy of the United States to support free peoples who are resisting attempted subjugation [being brought under another's control] by armed minorities or by outside pressures &hellip;</p><p>Should we fail to aid Greece and Turkey in this fateful hour, the effect will be far reaching to the West as well as to the East.</p>",
-      "toggle": "Three things are worth naming. Alternative ways of life turns a request for money into a choice between two systems, which is a much bigger argument than Greece needed. Free peoples resisting attempted subjugation is deliberately open: it does not say Greece, or Europe, or this year, so the promise could be applied anywhere afterwards, and it was. And notice what he never says. He does not name the Soviet Union once in the whole speech. One correction worth knowing: some textbooks print this passage as freedom of speech and election. Truman said freedom of speech and religion.",
+      "toggle": "<p>Truman is asking Congress for money for Greece and Turkey. Before he asks, he sets up a choice between two ways of life. One rests on what the majority wants and comes with free elections, free speech and free religion. The other is imposed by a minority and runs on terror, a controlled press and fixed elections. He then states the policy. The United States will support free peoples who are resisting being brought under someone else's control. He closes by warning that failing Greece and Turkey would be felt far beyond them.</p><p>Now the wording. The phrase \"alternative ways of life\" turns a request for money into a choice between two systems. That is a much bigger argument than Greece needed. The promise to \"support free peoples who are resisting attempted subjugation\" is deliberately open. It does not say Greece, or Europe, or this year, so the promise could be applied anywhere afterwards. It was.</p><p>Notice what he never says. He does not name the Soviet Union once in the whole speech.</p><p>One correction worth having, because you may meet the wrong version. Some textbooks print this passage as \"freedom of speech and election\". Truman said \"freedom of speech and religion\".</p>",
       "toggleLabel": "What does this actually mean?"
     },
     "terms": [
@@ -1097,7 +1099,7 @@ const FLOW = [
       "2": 1,
       "3": 1
     },
-    "explanation": "Both famous sentences are printed in front of you. Truman never names the Soviet Union anywhere in the speech. The British withdrawal is the reason he is speaking, not something he says. Both of those feel as though they must be there, which is what makes them worth checking. A quote question takes only what is on the page. Anything else is you, not the source.",
+    "explanation": "Both famous sentences are printed in front of you. Truman never names the Soviet Union anywhere in the speech. The British withdrawal is the reason he is speaking, but he does not say it. Both of those feel as though they must be on the page, which is what makes them worth checking. A quote question pays only for what is on the page. Bring in anything else and a marker cannot give you the mark.",
     "marks": "2 marks"
   },
   {
@@ -1111,7 +1113,7 @@ const FLOW = [
       "To keep America out of quarrels between the European governments"
     ],
     "correct": 0,
-    "explanation": "The sentence is on the page for you and is worth learning word for word. It is the doctrine itself. Option {opt1} is the one to watch, because removing communism where it already exists is what containment does not do. Confuse the two and your whole answer on American policy points the wrong way. The source says the opposite on the same page.",
+    "explanation": "The sentence is on the page in front of you and is worth learning word for word. Truman promises to support countries that are resisting, and that promise is the Doctrine. Option {opt1} is the one to watch. Containment means holding communism where it already is. It does not mean pushing communism back out of countries it has taken. Confuse the two and your whole answer on American policy points the wrong way, which costs the marks.",
     "marks": "(1 x 2)  2 marks"
   },
   {
@@ -1125,7 +1127,7 @@ const FLOW = [
       "It allowed him to avoid asking Congress for any money at all"
     ],
     "correct": 0,
-    "explanation": "Congress had just cut spending. Truman needed it to pay for a war in Greece. Most Americans could not find Greece on a map. Call it a choice between freedom and oppression and it stops being a favour to one small country. It becomes a matter of principle. It also covers every request he makes after this one. Option {opt1} treats a tactic as a personality trait, so you end up describing the man instead of the speech.",
+    "explanation": "Congress had just cut spending. Truman needed it to pay for a war in Greece. Most Americans, as you can imagine, could not have found Greece on a map. Call it a choice between freedom and oppression and the money stops being a favour to one small country. It becomes a matter of principle, and the same argument covers every request he makes afterwards. Option {opt1} treats a tactic as a personality trait. Describe the man instead of the speech and a marker reads it as narrative.",
     "marks": "(2 x 2)  4 marks"
   },
   {
@@ -1139,7 +1141,7 @@ const FLOW = [
       "Hold the money back until each country agrees to hold elections"
     ],
     "correct": 1,
-    "explanation": "There is no score on this one. Marshall offered it to everybody, including the Soviet Union, and that was the clever part. If Moscow accepted, the aid would work. If Moscow refused, the refusal belonged to Moscow rather than to Washington. You are about to see which of those happened.",
+    "explanation": "Marshall offered the aid to everybody, and that included the Soviet Union. If Moscow accepted, the money went to work and Europe recovered. If Moscow refused, the split in Europe was Moscow's doing rather than Washington's. You are about to read which of those happened. In the exam, that offer turns a description of the Plan into an argument. The marks follow the argument.",
     "noSource": true
   },
   {
@@ -1195,7 +1197,7 @@ const FLOW = [
       "It shows the money was not needed, since Europe recovered anyway"
     ],
     "correct": 0,
-    "explanation": "Truman asked for one figure. Congress handed over a smaller one. A president cannot simply decide on his own. That gap is also why you will see two different figures in textbooks. Option {opt2} goes too far. The same Congress passed the Act weeks after Czechoslovakia fell, so it did see a threat. Read a smaller budget as a no and you will misread every American decision after this one.",
+    "explanation": "Truman asked for one figure and Congress handed over a smaller one. A president cannot simply decide American policy on his own. That gap is also why you will see two different figures in textbooks. Option {opt2} goes too far. The same Congress passed the Act weeks after Czechoslovakia fell, so it did see a threat. Read a smaller budget as a refusal and you misread every American decision after this one. That costs you marks.",
     "marks": "(1 x 2)  2 marks"
   },
   {
@@ -1220,7 +1222,7 @@ const FLOW = [
     "source": {
       "attr": "Source B: from a speech by Andrei Vyshinsky, Soviet Deputy Minister of Foreign Affairs, to the United Nations General Assembly, 18 September 1947. Out of copyright.",
       "body": "<p>The so-called Truman Doctrine is a particularly glaring [obvious] example of the way in which the United States has moved towards giving up the idea of international co-operation and joint action by the great powers.</p><p>It has tried to force its will on other independent countries, whilst at the same time obviously using the money distributed as relief to needy countries as an instrument of political pressure &hellip;</p><p>This policy conflicts sharply with the principle expressed by the General Assembly of the United Nations in its resolution of 11 December 1946, which declares that relief supplies to other countries should, at no time, be used as a political weapon.</p>",
-      "toggle": "Two things are doing the work here. So-called is a small phrase with a lot in it: he is refusing to accept that the Doctrine deserves the dignity of a name. And the closing move is the sharpest part of the speech. Rather than simply objecting, he quotes a United Nations resolution that the United States itself voted for, which turns a complaint into an accusation of hypocrisy. Notice also where he chose to say it. This is the General Assembly, so the audience is every other country in the world, not Washington.",
+      "toggle": "<p>Vyshinsky is attacking the Truman Doctrine at the United Nations, and he makes three charges. The United States is walking away from working with the other great powers. It is forcing its will on independent countries. And it is using aid money as a political weapon rather than as relief. He then points to a General Assembly resolution of December 1946 saying relief must never be used that way.</p><p>Now the wording. He calls it the \"so-called Truman Doctrine\", which is a small phrase with a lot in it. He is refusing to accept that the Doctrine deserves the dignity of a name. Calling it \"a particularly glaring example\" means an obvious one, and says this is a pattern rather than a one-off.</p><p>The closing move is the sharpest part. Instead of simply objecting, he quotes a resolution the United States itself voted for. That turns a complaint into a charge of hypocrisy.</p><p>Notice where he chose to say it, because it changes who you think he is addressing. This is the General Assembly, so his audience is every other country in the world, not Washington.</p>",
       "toggleLabel": "What does this actually mean?"
     },
     "terms": [
@@ -1246,7 +1248,7 @@ const FLOW = [
       "Offering it only to countries that already have capitalist economies"
     ],
     "correct": 0,
-    "explanation": "The phrase is in the source and it is the heart of the accusation. Option {opt1} is true of the Truman Doctrine and is not what this source says. That is exactly why it tempts you. Answer a question about Source B with a fact from Source A and you have answered a different question.",
+    "explanation": "The phrase sits in Source B, and it is the accusation Vyshinsky is making. Option {opt1} is true of the Truman Doctrine. Source B does not say it, which is exactly why it tempts you. Read the question again: it names Source B. Answer a question about Source B with a fact from Source A and a marker cannot give you the mark.",
     "marks": "(1 x 2)  2 marks"
   },
   {
@@ -1260,7 +1262,7 @@ const FLOW = [
       "It allowed him to make his speech considerably shorter than it might be"
     ],
     "correct": 0,
-    "explanation": "A complaint is just one country's opinion. A rule the other side voted for is something you can hold them to. He is doing it in a hall full of the other member states, which makes it land harder. Option {opt1} claims too much. The 1946 resolution said nothing about a doctrine that did not exist yet.",
+    "explanation": "Anyone can complain, and a complaint is only one country's opinion. A rule the other side voted for is something Vyshinsky can hold them to. He does it in a hall full of the other member states. Picture that audience as well as the words you are reading. Option {opt1} claims too much. The 1946 resolution said nothing about a doctrine that did not exist yet. Say what the quotation does to the Americans and the marks are yours.",
     "marks": "(2 x 2)  4 marks"
   },
   {
@@ -1275,7 +1277,7 @@ const FLOW = [
       "Both say the money went to Greece and Turkey and to nowhere else in Europe"
     ],
     "correct": 0,
-    "explanation": "Truman says the money goes to governments under pressure. Vyshinsky says the money comes with American terms attached. These two men hate each other. They still agree on what is happening, and they split on what it means. Option {opt1} puts Truman's words in Vyshinsky's mouth, and he never says that. A supports question wants the point both sources carry, so give the point they share and not the one you find more interesting."
+    "explanation": "Truman says the money goes to governments under pressure. Vyshinsky says the money comes with American terms attached. These two men hate each other, and they still agree on what is happening. They split only on what it means. Option {opt1} puts Truman's words in Vyshinsky's mouth, and he never says that. A supports question wants the point both sources carry. Give the point they share and a marker can give you both marks."
   },
   {
     "type": "content",
@@ -1304,7 +1306,7 @@ const FLOW = [
       "Not reliable, because speeches are never evidence of anything at all"
     ],
     "correct": 0,
-    "explanation": "Take a position, then give your reason from the source itself. This is a government spokesman attacking a rival in public. The speech is built to win an argument, not to describe one. Option {opt3} throws away every speech ever made instead of judging this one, which is refusing the question. Option {opt2} treats a big job title as proof that somebody is right.",
+    "explanation": "Take a position first, then give your reason from the source itself. Vyshinsky is a government spokesman attacking a rival in public. His speech is built to win the argument rather than to describe it. Option {opt3} throws away every speech ever made instead of judging this one. That refuses the question, and a marker cannot give you the marks for it. Option {opt2} treats a big job title as proof that somebody is telling the truth.",
     "marks": "(2 x 2)  4 marks"
   },
   {
@@ -1318,7 +1320,7 @@ const FLOW = [
       "Not useful, because a speech at the United Nations changed nothing at all"
     ],
     "correct": 0,
-    "explanation": "This is the pair to the last question, and the answer goes the other way. The speech is weak evidence of what America wanted. It is strong evidence of what the Soviet Union said in public. Option {opt1} is the trap. Unreliable does not mean useless. Say what the source is useful for and you have answered it.",
+    "explanation": "This question pairs with the last one, and the answer goes the other way. The speech is weak evidence of what America wanted. It is strong evidence of what the Soviet Union was willing to say in public. Option {opt1} is the trap, because unreliable and useless are not the same thing. A biased source is excellent evidence of the bias, which is the reading you want here. Say what the source is useful for and the marks are there.",
     "marks": "(2 x 2)  4 marks"
   },
   {
@@ -1358,7 +1360,7 @@ const FLOW = [
       4,
       5
     ],
-    "explanation": "February, March, June and September 1947, then 1949 and 1955. The gap most people compress is at the end. NATO and the Warsaw Pact are six years apart, not two sides of one moment. Treat them as simultaneous and you lose the point that the Pact answered West German rearmament. That is the point the question depends on.",
+    "explanation": "The order runs February, March, June and September 1947, then 1949 and 1955. The gap at the end is the easy one to squash. NATO and the Warsaw Pact are six years apart, not two halves of one moment. West Germany was allowed an army in 1955, and the Pact was the answer to that. Treat the two as simultaneous and you lose the cause, which is where the marks are.",
     "noSource": true
   },
   {
